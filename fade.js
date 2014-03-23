@@ -4,7 +4,7 @@
 *	  fadeInSpeed: 300, //milliseconds
 *      opacity: x //0 to 1
 *  }
-*
+*d
 */
 jQuery.fn.fadejs = function(options){
 	var that = this;
