@@ -4,48 +4,65 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>Fade.js Example</title>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="fade.js"></script>
+		<script type="text/javascript" src="fade-min.js"></script>
 		<script type="text/javascript">
 		$(function(){
 			$(".menu").fadejs({
-				fadeOutSpeed: 1000,
+				fadeOutSpeed: 4000,
 				fadeInSpeed: 300,
-				opacity: 0.2,
-				fadeOnScroll: true,
-				scrollContainerClass: "content"
+				opacity: 0.14
 			});
 		});
 
 		</script>
 		<style type="text/css" media="screen">
+			body{
+				width: 600px;
+			}
+			#container{
+				background: #dee;
+				position: relative;
+			}
+			.menu{
+				top: 10px;
+				width: 100px;
+				float: left;
+				position: fixed;
+			}
 			.content{
-				height: 200px;
-				width: 220px;
-				border: 1px solid #999;
-				overflow: auto;
-				padding: 20px;
+				width: 500px;
+				float: left;
+				position: relative;
+				left: 100px;
 			}
 		</style>
 	</head>
 	<body id="example">
-		<div class="menu">
-			<h1>Menu</h1>
-		</div>
-		<div class="menu">
-			<h1>Menu 2</h1>
-		</div>
-		<div class="content">
-			<h1>Content</h1>
-			<hr/>
+		<div id="container">
 			<div class="menu">
-				<h1>scroll menu</h1>
+				<h1>Menu</h1>
 			</div>
 			<div class="content">
-				<h1>scroll content</h1>
-				<h1>scroll content</h1>
-				<h1>scroll content</h1>
+				<p>Bacon ipsum dolor sit amet rump kevin ham hock irure, elit sirloin aliqua chicken quis shank enim commodo beef ribs. Cupidatat hamburger meatball aute fatback elit anim turducken non tenderloin et. Tenderloin turducken mollit short loin bacon beef rump fatback qui drumstick jerky frankfurter chicken commodo. Incididunt dolor pork belly ut ball tip tenderloin, pastrami landjaeger laboris pork elit excepteur. Dolor pastrami laborum nulla, tri-tip tail prosciutto mollit landjaeger chicken short loin velit. Venison pariatur sausage, nostrud turkey jerky mollit drumstick salami quis deserunt anim sed laborum consectetur. Nisi culpa ad do, ullamco ball tip excepteur ham ea tongue.<br/><br/>
+
+Laboris turkey cupidatat deserunt. Nisi sint hamburger, t-bone shankle commodo capicola doner pork loin elit porchetta fatback shoulder. Frankfurter quis bresaola sirloin capicola reprehenderit boudin id dolore venison pork loin cillum qui. Ut irure ball tip adipisicing, commodo doner incididunt aliquip in magna enim aliqua filet mignon ground round. Id strip steak bacon tail.<br/><br/>
+
+Fatback eu nisi, porchetta culpa leberkas meatloaf. Salami exercitation ground round shank. Fatback nostrud tri-tip ribeye flank veniam nisi aliqua. Culpa cupidatat sint dolor.<br/><br/>
+
+Minim ribeye ground round enim consectetur doner veniam frankfurter dolore. Porchetta voluptate meatloaf nisi. Elit shankle ground round, pork chop prosciutto pancetta pig spare ribs leberkas minim pork loin occaecat irure. Tongue cow salami eu, nisi magna pancetta sirloin.<br/><br/>
+
+Sed duis enim, ball tip velit aliqua shankle swine ham nulla turkey salami hamburger anim. Irure meatloaf tongue consequat meatball commodo duis biltong quis jerky. Venison nisi ex laborum filet mignon pariatur jowl in brisket bacon beef ribs landjaeger culpa. Porchetta pork loin in, bresaola corned beef nulla fugiat ham hock tri-tip ex pastrami turducken rump.</p>
+<p>Bacon ipsum dolor sit amet rump kevin ham hock irure, elit sirloin aliqua chicken quis shank enim commodo beef ribs. Cupidatat hamburger meatball aute fatback elit anim turducken non tenderloin et. Tenderloin turducken mollit short loin bacon beef rump fatback qui drumstick jerky frankfurter chicken commodo. Incididunt dolor pork belly ut ball tip tenderloin, pastrami landjaeger laboris pork elit excepteur. Dolor pastrami laborum nulla, tri-tip tail prosciutto mollit landjaeger chicken short loin velit. Venison pariatur sausage, nostrud turkey jerky mollit drumstick salami quis deserunt anim sed laborum consectetur. Nisi culpa ad do, ullamco ball tip excepteur ham ea tongue.<br/><br/>
+
+Laboris turkey cupidatat deserunt. Nisi sint hamburger, t-bone shankle commodo capicola doner pork loin elit porchetta fatback shoulder. Frankfurter quis bresaola sirloin capicola reprehenderit boudin id dolore venison pork loin cillum qui. Ut irure ball tip adipisicing, commodo doner incididunt aliquip in magna enim aliqua filet mignon ground round. Id strip steak bacon tail.<br/><br/>
+
+Fatback eu nisi, porchetta culpa leberkas meatloaf. Salami exercitation ground round shank. Fatback nostrud tri-tip ribeye flank veniam nisi aliqua. Culpa cupidatat sint dolor.<br/><br/>
+
+Minim ribeye ground round enim consectetur doner veniam frankfurter dolore. Porchetta voluptate meatloaf nisi. Elit shankle ground round, pork chop prosciutto pancetta pig spare ribs leberkas minim pork loin occaecat irure. Tongue cow salami eu, nisi magna pancetta sirloin.<br/><br/>
+
+Sed duis enim, ball tip velit aliqua shankle swine ham nulla turkey salami hamburger anim. Irure meatloaf tongue consequat meatball commodo duis biltong quis jerky. Venison nisi ex laborum filet mignon pariatur jowl in brisket bacon beef ribs landjaeger culpa. Porchetta pork loin in, bresaola corned beef nulla fugiat ham hock tri-tip ex pastrami turducken rump.</p>
+
 			</div>
-			
 		</div>
 	</body>
 </html>

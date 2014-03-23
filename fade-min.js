@@ -1,0 +1,1 @@
+jQuery.fn.fadejs=function(a){function c(){"out"===b&&($(d).fadeTo(e,1),b="in")}var d=this,b="in",f=a.fadeOutSpeed||1E4,e=a.fadeInSpeed||500,g=a.opacity||0.1;$(this.selector).on("mouseover",c);$(document).scroll(function(a){10>=a.currentTarget.body.scrollTop?c():"in"===b&&($(d).fadeTo(f,g),b="out")})};
